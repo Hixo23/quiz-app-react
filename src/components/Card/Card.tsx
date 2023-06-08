@@ -6,7 +6,7 @@ const Card = () => {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
-  const changeCurrentlyQuestion = (e: React.MouseEvent<HTMLButtonElement>, isCorrect: boolean) => {
+  const changeCurrentlyQuestion = (isCorrect: boolean) => {
     const nextQuestion = currentyQuestion + 1;
     if (isCorrect) {
       setScore(score + 1);
@@ -39,7 +39,7 @@ const Card = () => {
             {questions[currentyQuestion].answerOptions.map((answer) => (
               <button
                 key={answer.answerText}
-                onClick={(e) => changeCurrentlyQuestion(e, answer.isCorrect)}
+                onClick={() => changeCurrentlyQuestion(answer.isCorrect)}
                 className="h-12 w-64 text-white mr-4 rounded-xl mt-2 flex justify-center items-center hover:bg-slate-500 cursor-pointer bg-slate-600"
               >
                 {answer.answerText}
