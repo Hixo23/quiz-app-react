@@ -5,16 +5,16 @@
             { "answerText": "New York", "isCorrect": false },
             { "answerText": "London", "isCorrect": false },
             { "answerText": "Paris", "isCorrect": true },
-            { "answerText": "Dublin", "isCorrect": false },
+            { "answerText": "Dublin", "isCorrect": false }
         ]
-    }
+    },
     {
         "questionText": "Who is CEO of Tesla?",
         "answerOptions": [
             { "answerText": "Jeff Bezos", "isCorrect": false },
             { "answerText": "Elon Musk", "isCorrect": true },
             { "answerText": "Bill Gates", "isCorrect": false },
-            { "answerText": "Tony Stark", "isCorrect": false },
+            { "answerText": "Tony Stark", "isCorrect": false }
         ]
     },
     {
@@ -23,7 +23,7 @@
             { "answerText": "Apple", "isCorrect": true },
             { "answerText": "Intel", "isCorrect": false },
             { "answerText": "Amazon", "isCorrect": false },
-            { "answerText": "Microsoft", "isCorrect": false },
+            { "answerText": "Microsoft", "isCorrect": false }
         ]
     },
     {
@@ -32,7 +32,7 @@
             { "answerText": "1", "isCorrect": false },
             { "answerText": "4", "isCorrect": false },
             { "answerText": "6", "isCorrect": false },
-            { "answerText": "7", "isCorrect": true },
+            { "answerText": "7", "isCorrect": true }
         ]
     }
 ]
