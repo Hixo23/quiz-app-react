@@ -1,10 +1,12 @@
 import { useState } from "react";
-import questions from "../../data/questions.json";
+import data from "../../data/questions.json";
 
 const Card = () => {
   const [currentyQuestion, serCurrentlyQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
+
+  const questions = data.sort(() => 0.5 - Math.random());
 
   const changeCurrentlyQuestion = (isCorrect: boolean) => {
     const nextQuestion = currentyQuestion + 1;
