@@ -26,7 +26,9 @@ const Card = () => {
   return (
     <div className="w-[42rem] h-96 relative bg-slate-700 rounded-lg flex justify-between">
       {showScore ? (
-        <h1 className="text-4xl text-center text-white p-4">Your score is {score}</h1>
+       <div className="flex justify-center items-center w-full">
+         <h1 className="text-4xl text-center text-white p-4">Your score is {score}</h1>
+       </div>
       ) : (
         <>
           <div className="flex flex-col w-full h-full justify-center items-center">
